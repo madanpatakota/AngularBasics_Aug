@@ -1,0 +1,53 @@
+<!-- <p>second-level works!</p> -->
+
+<!-- ngStyle -->
+
+
+<!-- <div style="background-color:red">First Div</div> -->
+
+<!-- element level style , inline style , externalstyle -->
+
+
+<!-- style.css  
+    Global 
+-->
+
+<!-- 
+<style>
+
+</style> -->
+
+
+<!-- <div [ngStyle]="
+{
+ 'background-color': divColor, 
+ 'font-size'       : divfontSize
+}" (mouseover)="changeColor()"
+   (mouseout) ="resetColor()"
+   (click)="otherColor()">
+    {{divText}}
+</div> -->
+
+
+<!-- ngClass -->
+
+
+
+
+<!-- <div [ngClass]="'para'">
+     Other Division
+</div> -->
+
+
+
+<button (click)="changePara()">
+   ClickMe
+</button>
+
+<div [ngClass]="isStatus == true ? 'para' : 'para1'">
+     Other Division
+</div>
+
+
+{{isStatus}}
+

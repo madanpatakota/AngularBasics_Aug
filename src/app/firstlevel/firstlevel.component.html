@@ -1,0 +1,121 @@
+<!-- Hello world -->
+
+
+<!-- here this is the name -->
+<!-- <app-test-comp></app-test-comp> -->
+
+
+<!-- string interpolation {{_________}}-->
+
+
+<!-- <h3>AngularBasics</h3>
+
+<h3>Welcome to {{title}}</h3> -->
+
+<!-- {{ ProjectName }} and {{ title }} -->
+
+
+<!-- {{getCustomerName()}} -->
+
+
+<!--property binding  [propername]-->
+<!-- <input value="Madan">
+<input [value]="customerRole"> -->
+
+
+<!-- 
+<input type="text" disabled="true">
+<input [type]="inputType" disabled="true">
+<input [type]="inputType" [disabled]="isDisabled" > -->
+
+
+
+<!-- event | task | action ---------() -->
+
+<!-- <button (click)="btnClick()" 
+ (mouseover)="btnMouseOver($event)"
+ >ClickMe</button> -->
+<!--$event-->
+
+<br>
+
+<br>
+
+<br>
+
+<!-- <input type="text"
+  (keyup) = "captureData($event, 'helloworld')"
+  placeholder="Event DAtabinidng - 1">
+ -->
+
+
+
+
+<!-- Q1) i want to apply property databinding and event data binding 
+ together to the single html elmement -->
+
+ <br>
+ <br>
+
+<!-- <input 
+  type="text"
+  (keyup) = "captureData($event, 'helloworld')"
+  [placeholder]="testvalue"> -->
+
+    
+
+
+<!-- 
+<input type="text" [value]="sName"/>
+
+
+<input type="checkbox" [checked]="isChecked"/>
+
+<select (change)="drpChange()">
+      <option [selected]="selectedValue == 1" value="1">Ramu</option>
+      <option [selected]="selectedValue == 2" value="2">Madan</option>
+      <option [selected]="selectedValue == 3" value="3">Somu</option>
+</select> -->
+
+<!--Advantages of element-->
+
+<!-- <input 
+ type="text" 
+ [ngModel]="sName"
+ (ngModelChange)="modelChange($event)" />
+
+
+<input type="checkbox"
+ [ngModel]="isChecked" 
+(ngModelChange)="modelChange($event)"/>
+
+
+<select 
+(change)="drpChange()"
+[ngModel]="selectedValue"
+(ngModelChange)="modelChange($event)">
+      <option value="1">Ramu</option>
+      <option value="2">Madan</option>
+      <option value="3">Somu</option>
+</select> -->
+
+
+<!--
+   1. String Interpolation  {{}}
+      2. Property Binding   []
+      3. Event Binding      ()
+      4. $event             $event
+      5. ngModel   
+      6. ngModelChange
+      7. Two way data binding - ngModel = property binding + event binding = [()]
+-->
+
+
+<!-- [(ngModel)]  = [ngModel] + (ngModelChange) -->
+<hr>
+<input type = "text" [(ngModel)] = "xyz">
+
+<br>
+Value is : <span>{{xyz}}</span>
+
+<textarea [value]="xyz"></textarea>
