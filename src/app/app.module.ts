@@ -8,6 +8,7 @@ import {TestCompComponent} from './test-comp/test-comp.component';
 import { FormsModule } from '@angular/forms';
 import { FirstlevelComponent } from './firstlevel/firstlevel.component';
 import { SecondLevelComponent } from './second-level/second-level.component';
+import { ThirdLevelComponent } from './third-level/third-level.component';
 
 @NgModule(
 {
@@ -15,7 +16,8 @@ import { SecondLevelComponent } from './second-level/second-level.component';
     AppComponent,
     TestCompComponent,
     FirstlevelComponent,
-    SecondLevelComponent
+    SecondLevelComponent,
+    ThirdLevelComponent
   ],
   imports: [
     BrowserModule,
