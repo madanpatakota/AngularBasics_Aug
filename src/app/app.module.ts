@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { FirstlevelComponent } from './firstlevel/firstlevel.component';
 import { SecondLevelComponent } from './second-level/second-level.component';
 import { ThirdLevelComponent } from './third-level/third-level.component';
+import { FourthLevelComponent } from './fourth-level/fourth-level.component';
 
 @NgModule(
 {
@@ -17,7 +18,8 @@ import { ThirdLevelComponent } from './third-level/third-level.component';
     TestCompComponent,
     FirstlevelComponent,
     SecondLevelComponent,
-    ThirdLevelComponent
+    ThirdLevelComponent,
+    FourthLevelComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,50 @@
+
+
+<!-- <input type="text"
+  placeholder="First Name"
+  #firstName />
+<p #someText>hello world</p>
+
+<button (click)="btnClick()">
+   Click Me
+</button> -->
+
+
+<!-- <ng-content>
+</ng-content> -->
+
+
+<!-- <ng-content select="[password]">
+</ng-content> -->
+
+
+
+<!-- if else -->
+<!--Templateref-->
+
+<div *ngFor="let number of numbers" 
+style="background-color: red;">
+     {{number}}
+</div>
+
+<!--NO DOM created -->
+<ng-container *ngFor="let number of numbers" 
+style="background-color: red;">
+    {{number}}
+</ng-container>
+
+
+
+
+
+<ng-container #container></ng-container>
+<ng-template #sampleText let-myName1="myName">
+    <!-- <span>Hello world...</span> -->
+     <input type="text" 
+     placeholder="first name" [value]="myName1" />
+</ng-template>
+
+
+<button (click)="btnClick1()">
+   Click Me
+</button>
